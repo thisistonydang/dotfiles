@@ -1,13 +1,3 @@
-[user]
-	email = tony@tonydang.com
-	name = Tony Dang
-	signingkey = ~/.ssh/id_ed25519
-[core]
-	editor = nvim
-[diff]
-	tool = nvimdiff
-[init]
-	defaultBranch = main
 [alias]
 	br = branch
 	cm = commit -S -m
@@ -17,9 +7,19 @@
 	s = status
 	sw = switch
 	undoto = reset --hard
-[merge]
+[commit]
+	gpgSign = true
+[core]
+	editor = nvim
+[diff]
 	tool = nvimdiff
 [gpg]
 	format = ssh
-[commit]
-	gpgSign = true
+[init]
+	defaultBranch = main
+[merge]
+	tool = nvimdiff
+[user]
+	email = tony@tonydang.com
+	name = Tony Dang
+	signingkey = ~/.ssh/id_ed25519
