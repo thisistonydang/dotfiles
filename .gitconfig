@@ -2,6 +2,8 @@
 	email = tony@tonydang.com
 	name = Tony Dang
 	signingkey = ~/.ssh/id_ed25519
+[core]
+	editor = nvim
 [diff]
 	tool = nvimdiff
 [init]
