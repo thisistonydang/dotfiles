@@ -1,0 +1,23 @@
+[user]
+	email = tony@tonydang.com
+	name = Tony Dang
+	signingkey = ~/.ssh/id_ed25519
+[diff]
+	tool = nvimdiff
+[init]
+	defaultBranch = main
+[alias]
+	br = branch
+	cm = commit -S -m
+	dt = difftool
+	dts = difftool --staged
+	l = log --oneline --graph
+	s = status
+	sw = switch
+	undoto = reset --hard
+[merge]
+	tool = nvimdiff
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
