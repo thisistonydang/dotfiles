@@ -22,4 +22,4 @@
 [gpg]
 	format = ssh
 [commit]
-	gpgsign = true
+	gpgSign = true
