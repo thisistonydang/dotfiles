@@ -18,22 +18,20 @@ alias ..="cd .."
 # # Plugins
 # ####################################################################################################
 
-# # Enable auto suggestions.
-# Install: git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+# Plugins
+####################################################################################################
+
+# Auto-install plugins if missing
+[[ ! -d ~/.zsh/zsh-autosuggestions ]] && git clone --depth=1 git@github.com:zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+[[ ! -d ~/.zsh/zsh-syntax-highlighting ]] && git clone --depth=1 git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+[[ ! -d ~/.zsh/z ]] && git clone --depth=1 git@github.com:rupa/z.git ~/.zsh/z
+[[ ! -d ~/.zsh/powerlevel10k ]] && git clone --depth=1 git@github.com:romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
+
+# Load plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# # Enable syntax highlighting.
-# Install: git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# # Enable z jump around.
-# Install: git clone --depth=1 git@github.com:rupa/z.git ~/.zsh/z
 source ~/.zsh/z/z.sh
-
-# Enable powerlevel10k theme.
-# Install: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
