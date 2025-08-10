@@ -22,4 +22,4 @@
 [user]
 	email = tony@tonydang.com
 	name = Tony Dang
-	signingkey = ~/.ssh/id_ed25519
+	signingKey = ~/.ssh/id_ed25519
