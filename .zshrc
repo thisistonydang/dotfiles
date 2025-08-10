@@ -13,6 +13,9 @@ fi
 
 # Shortcuts
 alias ..="cd .."
+alias ls="ls -F --color=auto"
+alias la="ls -A"
+alias ll="ls -la"
 
 
 # # Plugins
