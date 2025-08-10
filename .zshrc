@@ -53,6 +53,9 @@ alias grep="grep --color=auto"
 # Applications
 ####################################################################################################
 
+# ASDF
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 # Brew
 alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 
