@@ -13,6 +13,10 @@ fi
 
 # Shortcuts
 alias ..="cd .."
+# # Enable syntax highlighting.
+# Install: git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Enable powerlevel10k theme.
 # Install: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
