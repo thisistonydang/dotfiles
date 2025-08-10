@@ -58,8 +58,6 @@ alias grep="grep --color=auto"
 # Languages
 ####################################################################################################
 
-
-
 # Python
 alias activate='source .venv/bin/activate'
 alias py='python'
