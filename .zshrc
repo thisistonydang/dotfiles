@@ -27,7 +27,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # # Enable z jump around.
-# Install: git clone git@github.com:rupa/z.git ~/.zsh/z
+# Install: git clone --depth=1 git@github.com:rupa/z.git ~/.zsh/z
 source ~/.zsh/z/z.sh
 
 # Enable powerlevel10k theme.
