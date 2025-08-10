@@ -66,6 +66,7 @@ alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 alias activate='source .venv/bin/activate'
 alias py='python'
 
+
 # Plugins
 ####################################################################################################
 
