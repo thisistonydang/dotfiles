@@ -8,6 +8,13 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+# Settings
+####################################################################################################
+
+# Increase max open files limit (MacOS default = 256, Linux default = 4096).
+ulimit -n 1024
+
 # Aliases
 ####################################################################################################
 
