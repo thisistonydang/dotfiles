@@ -69,10 +69,10 @@ alias py='python'
 ####################################################################################################
 
 # Auto-install plugins if missing
-[[ ! -d ~/.zsh/zsh-autosuggestions ]] && git clone --depth=1 git@github.com:zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
-[[ ! -d ~/.zsh/zsh-syntax-highlighting ]] && git clone --depth=1 git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-[[ ! -d ~/.zsh/z ]] && git clone --depth=1 git@github.com:rupa/z.git ~/.zsh/z
-[[ ! -d ~/.zsh/powerlevel10k ]] && git clone --depth=1 git@github.com:romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
+[[ ! -d ~/.zsh/zsh-autosuggestions ]] && git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+[[ ! -d ~/.zsh/zsh-syntax-highlighting ]] && git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+[[ ! -d ~/.zsh/z ]] && git clone --depth=1 https://github.com/rupa/z.git ~/.zsh/z
+[[ ! -d ~/.zsh/powerlevel10k ]] && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
 
 # Load plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
