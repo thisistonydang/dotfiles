@@ -53,7 +53,6 @@ alias grep="grep --color=auto"
 # Applications
 ####################################################################################################
 
-
 # Brew
 alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 
