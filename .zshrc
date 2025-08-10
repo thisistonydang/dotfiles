@@ -21,8 +21,7 @@ loadenv() {
     set +a
     echo "Loaded .env file"
   else
-    echo "No .env file found" >&2
-    return 1
+    echo "No .env file found"
   fi
 }
 
