@@ -13,6 +13,15 @@ fi
 
 # Shortcuts
 alias ..="cd .."
+
+
+# # Plugins
+# ####################################################################################################
+
+# # Enable auto suggestions.
+# Install: git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # # Enable syntax highlighting.
 # Install: git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
