@@ -9,6 +9,24 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
+# Functions
+####################################################################################################
+
+# Load .env file
+loadenv() {
+  if [[ -f .env ]]; then
+    set -a 
+    source .env
+    set +a
+    echo "Loaded .env file"
+  else
+    echo "No .env file found" >&2
+    return 1
+  fi
+}
+
+
 # Settings
 ####################################################################################################
 
