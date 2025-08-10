@@ -16,6 +16,9 @@ alias ..="cd .."
 alias ls="ls -F --color=auto"
 alias la="ls -A"
 alias ll="ls -la"
+alias grep="grep --color=auto"
+
+
 
 
 # # Plugins
