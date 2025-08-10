@@ -14,6 +14,7 @@ fi
 # Shortcuts
 alias ..="cd .."
 # Enable powerlevel10k theme.
+# Install: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
