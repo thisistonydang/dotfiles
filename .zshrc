@@ -27,7 +27,7 @@ loadenv() {
 }
 
 
-# Settings
+# General Settings
 ####################################################################################################
 
 # Increase max open files limit (MacOS default = 256, Linux default = 4096).
