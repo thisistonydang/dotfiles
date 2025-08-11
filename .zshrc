@@ -57,13 +57,7 @@ alias grep="grep --color=auto"
 
 # ASDF
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH" # Add ASDF shims to PATH
-# Shell completions
-if [[ ! -f "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf" ]]; then
-  mkdir -p "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
-  asdf completion zsh > "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf"
-fi 
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath) # append completions to fpath
-autoload -Uz compinit && compinit # initialise completions with ZSH's compinit
+[[ ! -f ~/.zsh/_asdf ]] && asdf completion zsh > ~/.zsh/_asdf
 
 # Brew
 alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
