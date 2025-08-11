@@ -32,7 +32,7 @@ loadenv() {
 ####################################################################################################
 
 # Increase max open files limit (MacOS default = 256, Linux default = 4096).
-ulimit -n 1024
+ulimit -n 4096
 
 # Shell history
 setopt HIST_IGNORE_ALL_DUPS 
