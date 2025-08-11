@@ -65,7 +65,6 @@ fi
 alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 
 
-
 # Languages
 ####################################################################################################
 
@@ -93,6 +92,7 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme # To customize prompt, run `
 
 # Load Shell Completions
 ####################################################################################################
+
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit
 compinit -u
