@@ -95,7 +95,7 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme # To customize prompt, run `
 
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit
-compinit -u
+compinit
 
 
 ####################################################################################################
