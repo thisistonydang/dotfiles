@@ -37,6 +37,7 @@ ulimit -n 4096
 # Shell history
 setopt HIST_IGNORE_ALL_DUPS 
 setopt HIST_REDUCE_BLANKS
+setopt INTERACTIVE_COMMENTS
 setopt SHARE_HISTORY 
 
 
