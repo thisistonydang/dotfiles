@@ -59,7 +59,6 @@ alias grep="grep --color=auto"
 # ASDF
 if command -v asdf >/dev/null 2>&1; then
   export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH" # Add ASDF shims to PATH
-  [[ ! -f ~/.zsh/_asdf ]] && asdf completion zsh > ~/.zsh/_asdf
 fi
 
 # Brew
@@ -89,14 +88,6 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/z/z.sh
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-# Load Shell Completions
-####################################################################################################
-
-fpath=(~/.zsh $fpath)
-autoload -Uz compinit
-compinit
 
 
 ####################################################################################################
