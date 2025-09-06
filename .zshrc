@@ -68,6 +68,13 @@ alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 # Languages
 ####################################################################################################
 
+# Elixir
+if command -v nproc >/dev/null 2>&1; then
+  export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(( $(nproc) / 2 ))
+elif [[ "$(uname)" == "Darwin" ]]; then
+  export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(( $(sysctl -n hw.logicalcpu) / 2 ))
+fi
+
 # Python
 alias activate='source .venv/bin/activate'
 alias py='python'
