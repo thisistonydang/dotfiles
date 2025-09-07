@@ -69,6 +69,8 @@ alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 ####################################################################################################
 
 # Elixir
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 if command -v nproc >/dev/null 2>&1; then
   export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(( $(nproc) / 2 ))
 elif [[ "$(uname)" == "Darwin" ]]; then
