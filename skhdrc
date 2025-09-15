@@ -1,0 +1,29 @@
+# Changing focus within a space
+alt - h: yabai -m window --focus west
+alt - j: yabai -m window --focus south
+alt - k: yabai -m window --focus north
+alt - l: yabai -m window --focus east
+
+# Changing focus between external displays
+alt - s: yabai -m display --focus west
+alt - d: yabai -m display --focus east
+
+# Toggle window float
+shift + alt - f: yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# Maximize a window
+shift + alt - m: yabai -m window --toggle zoom-fullscreen
+
+# Balance out tree of windows (resize to occupy same area)
+shift + alt - e: yabai -m space --balance
+
+# Swap windows
+shift + alt - h: yabai -m window --swap west
+shift + alt - j: yabai -m window --swap south
+shift + alt - k: yabai -m window --swap north
+shift + alt - l: yabai -m window --swap east
+
+# Stop/start/restart yabai
+shift + alt - q: yabai --stop-service
+shift + alt - s: yabai --start-service
+shift + alt - r: yabai --restart-service
