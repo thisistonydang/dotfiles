@@ -1,2 +1,7 @@
 .DS_Store
 .tmp.driveupload/
+
+# Environmental Variables
+.env
+.env.*
+!.env.example
