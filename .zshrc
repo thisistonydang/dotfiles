@@ -57,14 +57,13 @@ alias lg="lazygit"
 # Applications
 ####################################################################################################
 
-# ASDF
-if command -v asdf >/dev/null 2>&1; then
-  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH" # Add ASDF shims to PATH
-fi
-
 # Brew
 alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 
+# Mise
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+fi
 
 # Languages
 ####################################################################################################
