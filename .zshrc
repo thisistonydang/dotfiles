@@ -60,6 +60,9 @@ alias lg="lazygit"
 # Brew
 alias brew-upgrade="brew upgrade && brew upgrade --cask --greedy"
 
+# Claude Code
+export PATH="$HOME/.local/bin:$PATH"
+
 # Mise
 if command -v mise >/dev/null 2>&1; then
   eval "$(mise activate zsh)"
