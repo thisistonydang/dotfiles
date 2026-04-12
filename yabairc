@@ -13,4 +13,5 @@ yabai -m rule --add app="^Google Drive$" manage=off
 yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Raycast Settings$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Thaw$" manage=off
 yabai -m rule --add app="^Warp$" manage=off
