@@ -17,16 +17,15 @@ fi
 
 # Load .env file
 loadenv() {
-  if [[ -f .env ]]; then
-    set -a 
-    source .env
-    set +a
-    echo "Loaded .env file"
-  else
-    echo "No .env file found"
-  fi
+	if [[ -f .env ]]; then
+		set -a
+		source .env
+		set +a
+		echo "Loaded .env file"
+	else
+		echo "No .env file found"
+	fi
 }
-
 
 # General Settings
 ####################################################################################################
@@ -35,11 +34,10 @@ loadenv() {
 ulimit -n 4096
 
 # Shell history
-setopt HIST_IGNORE_ALL_DUPS 
+setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt INTERACTIVE_COMMENTS
-setopt SHARE_HISTORY 
-
+setopt SHARE_HISTORY
 
 # Aliases
 ####################################################################################################
@@ -53,7 +51,6 @@ alias ll="ls -la"
 alias grep="grep --color=auto"
 alias lg="lazygit"
 
-
 # Applications
 ####################################################################################################
 
@@ -65,12 +62,12 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Mise
 if command -v mise >/dev/null 2>&1; then
-  eval "$(mise activate zsh)"
+	eval "$(mise activate zsh)"
 fi
 
 # psql
 if [[ "$(uname)" == "Darwin" ]]; then
-  export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+	export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 fi
 
 # Languages
@@ -80,15 +77,14 @@ fi
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 if command -v nproc >/dev/null 2>&1; then
-  export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(( $(nproc) / 2 ))
+	export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(($(nproc) / 2))
 elif [[ "$(uname)" == "Darwin" ]]; then
-  export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(( $(sysctl -n hw.logicalcpu) / 2 ))
+	export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(($(sysctl -n hw.logicalcpu) / 2))
 fi
 
 # Python
 alias activate='source .venv/bin/activate'
 alias py='python'
-
 
 # Plugins
 ####################################################################################################
@@ -106,14 +102,12 @@ source ~/.zsh/z/z.sh
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
 # Load Shell Completions
 ####################################################################################################
 
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit
 compinit
-
 
 ####################################################################################################
 # END Configuration                                                                                #
