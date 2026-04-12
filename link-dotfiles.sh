@@ -21,3 +21,4 @@ link "$ROOT/.zshrc" "$HOME/.zshrc"
 
 link "$ROOT/yabairc" "$HOME/.config/yabai/yabairc"
 link "$ROOT/skhdrc" "$HOME/.config/skhd/skhdrc"
+link "$ROOT/starship.toml" "$HOME/.config/starship.toml"
