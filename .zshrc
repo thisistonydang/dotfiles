@@ -2,13 +2,6 @@
 # .zshrc Configuration                                                                             #
 ####################################################################################################
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${USERNAME}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${USERNAME}.zsh"
-fi
-
 # Create ~/.zsh directory if it doesn't exist
 [[ ! -d ~/.zsh ]] && mkdir -p ~/.zsh
 
@@ -70,6 +63,11 @@ if [[ "$(uname)" == "Darwin" ]]; then
 	export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 fi
 
+# Starship
+if ! command -v starship >/dev/null 2>&1; then
+	curl -sS https://starship.rs/install.sh | sh
+fi
+
 # Languages
 ####################################################################################################
 
@@ -93,14 +91,11 @@ alias py='python'
 [[ ! -d ~/.zsh/zsh-autosuggestions ]] && git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 [[ ! -d ~/.zsh/zsh-syntax-highlighting ]] && git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 [[ ! -d ~/.zsh/z ]] && git clone --depth=1 https://github.com/rupa/z.git ~/.zsh/z
-[[ ! -d ~/.zsh/powerlevel10k ]] && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
 
 # Load plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/z/z.sh
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Load Shell Completions
 ####################################################################################################
@@ -112,3 +107,6 @@ compinit
 ####################################################################################################
 # END Configuration                                                                                #
 ####################################################################################################
+
+# Starship (must be at end of .zshrc)
+eval "$(starship init zsh)"
