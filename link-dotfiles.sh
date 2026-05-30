@@ -19,8 +19,6 @@ link "$ROOT/.gitignore_global" "$HOME/.gitignore_global"
 link "$ROOT/.iex.exs" "$HOME/.iex.exs"
 link "$ROOT/.zshrc" "$HOME/.zshrc"
 
-link "$ROOT/yabairc" "$HOME/.config/yabai/yabairc"
-link "$ROOT/skhdrc" "$HOME/.config/skhd/skhdrc"
 link "$ROOT/starship.toml" "$HOME/.config/starship.toml"
 
 link "$ROOT/config.ghostty" "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
