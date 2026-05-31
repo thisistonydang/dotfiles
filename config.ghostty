@@ -6,4 +6,4 @@ background-opacity = 0.8
 background-blur = 20
 window-padding-x = 10,10
 window-padding-y = 5,5
-theme = TokyoNight
+theme = light:TokyoNight Day,dark:TokyoNight 
