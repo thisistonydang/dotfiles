@@ -69,6 +69,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
 	export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 fi
 
+# Rectangle
+alias rectangle-restart="killall Rectangle && open -a Rectangle"
+
 # Starship
 if ! command -v starship >/dev/null 2>&1; then
 	curl -sS https://starship.rs/install.sh | sh
