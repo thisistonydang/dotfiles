@@ -44,6 +44,7 @@ $sudo\
 $cmd_duration\
 $line_break\
 $jobs\
+${custom.sleep}\
 $battery\
 $time\
 $status\
@@ -101,6 +102,17 @@ while [ "$d" != "$HOME" ] && [ "$d" != / ]; do
 done
 exit 1
 '''
+
+[custom.sleep]
+description = "Indicator shown when macOS sleep is disabled (Mac stays awake)"
+format = "[$symbol]($style) "
+style = "bold yellow"
+# Nerd Font coffee glyph (a la caffeinate); swap for ☕ if you don't have a Nerd Font.
+symbol = "󰅶"
+os = "macos"
+# Only render when `sudo pmset -a disablesleep 1` (the sleep-off alias) is active.
+# `pmset -g` takes ~20ms, so this is cheap enough to check on every prompt.
+when = "pmset -g | grep -q 'SleepDisabled[[:space:]]*1'"
 
 [dart]
 symbol = " "

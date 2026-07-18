@@ -44,6 +44,12 @@ alias ll="ls -la"
 alias grep="grep --color=auto"
 alias lg="lazygit"
 
+# Sleep (macOS)
+alias sleep-off="sudo pmset -a disablesleep 1"
+alias sleep-on="sudo pmset -a disablesleep 0"
+alias sleep-status="pmset -g | grep -q 'SleepDisabled[[:space:]]*1' && echo 'sleep disabled (Mac stays awake)' || echo 'sleep enabled'"
+alias screen-off="pmset displaysleepnow"
+
 # Applications
 ####################################################################################################
 
