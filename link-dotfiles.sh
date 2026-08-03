@@ -22,3 +22,7 @@ link "$ROOT/.zshrc" "$HOME/.zshrc"
 link "$ROOT/starship.toml" "$HOME/.config/starship.toml"
 
 link "$ROOT/config.ghostty" "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
+
+link "$ROOT/btop/themes/rose-pine.theme" "$HOME/.config/btop/themes/rose-pine.theme"
+link "$ROOT/btop/themes/rose-pine-moon.theme" "$HOME/.config/btop/themes/rose-pine-moon.theme"
+link "$ROOT/btop/themes/rose-pine-dawn.theme" "$HOME/.config/btop/themes/rose-pine-dawn.theme"
