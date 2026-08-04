@@ -25,6 +25,8 @@ link "$ROOT/config.ghostty" "$HOME/Library/Application Support/com.mitchellh.gho
 
 link "$ROOT/herdr/config.toml" "$HOME/.config/herdr/config.toml"
 
+link "$ROOT/hunk/config.toml" "$HOME/.config/hunk/config.toml"
+
 link "$ROOT/btop/btop.conf" "$HOME/.config/btop/btop.conf"
 link "$ROOT/btop/themes/rose-pine.theme" "$HOME/.config/btop/themes/rose-pine.theme"
 link "$ROOT/btop/themes/rose-pine-moon.theme" "$HOME/.config/btop/themes/rose-pine-moon.theme"
