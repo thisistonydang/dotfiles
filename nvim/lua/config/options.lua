@@ -5,3 +5,6 @@
 -- Set leader key to space (must be set before plugins load)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+
+-- Don't conceal markup (LazyVim defaults to 2, which hides ** for bold/italic)
+vim.opt.conceallevel = 0
