@@ -20,6 +20,29 @@ loadenv() {
 	fi
 }
 
+# Turn a video into an .srt subtitle file (saved next to the video)
+# Ex: mp4_to_srt video.mp4 large-v3
+mp4_to_srt() {
+  if ! command -v uvx >/dev/null 2>&1; then
+    echo "Need 'uv' first. Install it once with:  brew install uv"
+    return 1
+  fi
+  if [ ! -f "$1" ]; then
+    echo "Usage: mp4_to_srt <video-file> [model]"
+    echo "  models: base (fast) | small | medium (default) | large-v3 (best)"
+    return 1
+  fi
+  local model="${2:-medium}"
+  echo "Transcribing '$1' with the '$model' model..."
+  uvx --from whisper-ctranslate2 whisper-ctranslate2 \
+    --model "$model" \
+    --language en \
+    --task transcribe \
+    --output_format srt \
+    --output_dir "$(dirname "$1")" \
+    "$1"
+}
+
 # General Settings
 ####################################################################################################
 
@@ -43,6 +66,9 @@ alias la="ls -A"
 alias ll="ls -la"
 alias grep="grep --color=auto"
 alias lg="lazygit"
+alias /q="exit"
+alias \\q="exit"
+alias :q="exit"
 
 # Sleep (macOS)
 alias sleep-off="sudo pmset -a disablesleep 1"
