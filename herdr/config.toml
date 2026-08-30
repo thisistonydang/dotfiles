@@ -11,5 +11,10 @@ prefix = "`"
 previous_workspace = "prefix+,"
 next_workspace = "prefix+."
 split_vertical = "prefix+\\"
+swap_pane_left = "prefix+left"
+swap_pane_down = "prefix+down"
+swap_pane_up = "prefix+up"
+swap_pane_right = "prefix+right"
 
-
+[ui]
+agent_panel_sort = "spaces"
