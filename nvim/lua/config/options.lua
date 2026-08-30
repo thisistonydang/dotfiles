@@ -8,3 +8,6 @@ vim.g.maplocalleader = "\\"
 
 -- Don't conceal markup (LazyVim defaults to 2, which hides ** for bold/italic)
 vim.opt.conceallevel = 0
+
+-- Don't highlight the line under the cursor
+vim.opt.cursorline = false
