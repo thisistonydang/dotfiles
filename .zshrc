@@ -29,10 +29,10 @@ mp4_to_srt() {
   fi
   if [ ! -f "$1" ]; then
     echo "Usage: mp4_to_srt <video-file> [model]"
-    echo "  models: base (fast) | small | medium (default) | large-v3 (best)"
+    echo "  models: base (fast) | small | medium | large-v3 (default, best)"
     return 1
   fi
-  local model="${2:-medium}"
+  local model="${2:-large-v3}"
   echo "Transcribing '$1' with the '$model' model..."
   uvx --from whisper-ctranslate2 whisper-ctranslate2 \
     --model "$model" \
