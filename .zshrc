@@ -68,7 +68,6 @@ alias grep="grep --color=auto"
 alias lg="lazygit"
 alias /q="exit"
 alias \\q="exit"
-alias :q="exit"
 
 # Sleep (macOS)
 alias sleep-off="sudo pmset -a disablesleep 1"
