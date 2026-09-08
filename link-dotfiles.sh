@@ -33,3 +33,6 @@ link "$ROOT/btop/btop.conf" "$HOME/.config/btop/btop.conf"
 link "$ROOT/btop/themes/rose-pine.theme" "$HOME/.config/btop/themes/rose-pine.theme"
 link "$ROOT/btop/themes/rose-pine-moon.theme" "$HOME/.config/btop/themes/rose-pine-moon.theme"
 link "$ROOT/btop/themes/rose-pine-dawn.theme" "$HOME/.config/btop/themes/rose-pine-dawn.theme"
+
+link "$ROOT/pi/agent/extensions" "$HOME/.pi/agent/extensions"
+link "$ROOT/pi/agent/themes" "$HOME/.pi/agent/themes"
