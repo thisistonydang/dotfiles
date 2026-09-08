@@ -7,6 +7,7 @@
 	s = status
 	sw = switch
 	undoto = reset --hard
+	wt = worktree
 [commit]
 	gpgSign = true
 [core]
