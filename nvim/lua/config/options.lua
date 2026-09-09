@@ -11,3 +11,8 @@ vim.opt.conceallevel = 0
 
 -- Don't highlight the line under the cursor
 vim.opt.cursorline = false
+
+-- Wrap long lines at word boundaries and preserve indentation
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
