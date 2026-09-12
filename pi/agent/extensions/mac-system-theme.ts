@@ -21,9 +21,9 @@ const POLL_MS = 2000;
 async function isDarkMode(): Promise<boolean> {
 	try {
 		const { stdout } = await execAsync(
-			"osascript -e 'tell application \"System Events\" to tell appearance preferences to return dark mode'",
+			"/usr/bin/defaults read -g AppleInterfaceStyle",
 		);
-		return stdout.trim() === "true";
+		return stdout.trim() === "Dark";
 	} catch {
 		return false;
 	}
