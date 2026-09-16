@@ -9,6 +9,10 @@ vim.g.maplocalleader = "\\"
 -- Don't conceal markup (LazyVim defaults to 2, which hides ** for bold/italic)
 vim.opt.conceallevel = 0
 
+-- Show absolute line numbers instead of relative line numbers
+vim.opt.number = true
+vim.opt.relativenumber = false
+
 -- Don't highlight the line under the cursor
 vim.opt.cursorline = false
 
