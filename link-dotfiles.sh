@@ -19,8 +19,6 @@ link "$ROOT/.gitignore_global" "$HOME/.gitignore_global"
 link "$ROOT/.iex.exs" "$HOME/.iex.exs"
 link "$ROOT/.zshrc" "$HOME/.zshrc"
 
-link "$ROOT/starship.toml" "$HOME/.config/starship.toml"
-
 link "$ROOT/config.ghostty" "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
 
 link "$ROOT/aerospace/aerospace.toml" "$HOME/.config/aerospace/aerospace.toml"
@@ -38,3 +36,5 @@ link "$ROOT/nvim" "$HOME/.config/nvim"
 
 link "$ROOT/pi/agent/extensions" "$HOME/.pi/agent/extensions"
 link "$ROOT/pi/agent/themes" "$HOME/.pi/agent/themes"
+
+link "$ROOT/starship/starship.toml" "$HOME/.config/starship.toml"
