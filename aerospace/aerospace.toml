@@ -2,6 +2,9 @@
 config-version = 2
 start-at-login = true
 
+# Keep workspace 9 for secondary monitor
+persistent-workspaces = ['9']
+
 [gaps]
 inner.horizontal = 8
 inner.vertical = 8
@@ -9,6 +12,9 @@ outer.left = 8
 outer.right = 8
 outer.top = 8
 outer.bottom = 8
+
+[workspace-to-monitor-force-assignment]
+9 = 'secondary'
 
 [mode.main.binding]
 # Change layouts
