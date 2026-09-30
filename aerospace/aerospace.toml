@@ -16,6 +16,10 @@ outer.bottom = 8
 [workspace-to-monitor-force-assignment]
 9 = 'secondary'
 
+[[on-window-detected]]
+if.app-id = 'com.pais.handy'
+run = 'layout floating'
+
 [mode.main.binding]
 # Change layouts
 alt-slash = 'layout tiles horizontal vertical'
