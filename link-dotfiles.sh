@@ -27,6 +27,8 @@ link "$ROOT/herdr/config.toml" "$HOME/.config/herdr/config.toml"
 
 link "$ROOT/hunk/config.toml" "$HOME/.config/hunk/config.toml"
 
+link "$ROOT/aerospace/aerospace.toml" "$HOME/.config/aerospace/aerospace.toml"
+
 link "$ROOT/nvim" "$HOME/.config/nvim"
 
 link "$ROOT/btop/btop.conf" "$HOME/.config/btop/btop.conf"
