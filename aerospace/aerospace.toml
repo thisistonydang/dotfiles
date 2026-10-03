@@ -25,6 +25,7 @@ run = 'layout floating'
 alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
 alt-f = 'fullscreen'
+alt-shift-f = 'layout floating tiling'
 
 # Focus windows
 alt-h = 'focus left'

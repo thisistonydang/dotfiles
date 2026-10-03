@@ -1,4 +1,4 @@
-theme = "rose-pine"
+theme = "terminal"
 mode = "split"
 wrap_lines = true
 transparent_background = true
