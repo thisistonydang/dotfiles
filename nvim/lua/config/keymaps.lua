@@ -10,11 +10,11 @@ vim.keymap.set("i", "lll", "<Esc>", { desc = "Escape insert mode" })
 -- Show LSP hover information for the symbol under the cursor
 vim.keymap.set("n", "<leader>i", vim.lsp.buf.hover, { desc = "Symbol information" })
 
--- Map <leader>\ to vertical split
-vim.keymap.set("n", "<leader>\\", "<cmd>vsplit<cr>", { desc = "Vertical split" })
+-- Map <leader>v to vertical split
+vim.keymap.set("n", "<leader>v", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 
--- Map <leader>- to horizontal split
-vim.keymap.set("n", "<leader>-", "<cmd>split<cr>", { desc = "Horizontal split" })
+-- Map <leader>s to horizontal split
+vim.keymap.set("n", "<leader>s", "<cmd>split<cr>", { desc = "Horizontal split" })
 
 -- Move between splits with <leader>h/j/k/l
 vim.keymap.set("n", "<leader>h", "<C-w>h", { desc = "Move to left split" })
