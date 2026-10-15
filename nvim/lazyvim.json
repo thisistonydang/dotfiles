@@ -1,6 +1,11 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.lang.astro",
+    "lazyvim.plugins.extras.lang.elixir",
+    "lazyvim.plugins.extras.lang.svelte",
+    "lazyvim.plugins.extras.lang.tailwind",
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.lang.typescript.vtsls"
   ],
   "install_version": 8,
   "news": {
