@@ -18,3 +18,4 @@ swap_pane_right = "prefix+right"
 
 [ui]
 agent_panel_sort = "spaces"
+sidebar_collapsed_mode = "hidden"
