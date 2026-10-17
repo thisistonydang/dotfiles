@@ -16,6 +16,9 @@ vim.keymap.set("n", "<leader>v", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 -- Map <leader>s to horizontal split
 vim.keymap.set("n", "<leader>s", "<cmd>split<cr>", { desc = "Horizontal split" })
 
+-- Stage selected lines with <leader>ss
+vim.keymap.set("x", "<leader>ss", ":Gitsigns stage_hunk<cr>", { desc = "Stage selected lines" })
+
 -- Move between splits with <leader>h/j/k/l
 vim.keymap.set("n", "<leader>h", "<C-w>h", { desc = "Move to left split" })
 vim.keymap.set("n", "<leader>j", "<C-w>j", { desc = "Move to lower split" })
