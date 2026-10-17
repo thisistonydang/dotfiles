@@ -19,6 +19,9 @@ vim.keymap.set("n", "<leader>s", "<cmd>split<cr>", { desc = "Horizontal split" }
 -- Stage selected lines with <leader>ss
 vim.keymap.set("x", "<leader>ss", ":Gitsigns stage_hunk<cr>", { desc = "Stage selected lines" })
 
+-- Preview the current Git hunk in a floating window
+vim.keymap.set("n", "<leader>gg", "<cmd>Gitsigns preview_hunk<cr>", { desc = "Preview Git hunk" })
+
 -- Move between splits with <leader>h/j/k/l
 vim.keymap.set("n", "<leader>h", "<C-w>h", { desc = "Move to left split" })
 vim.keymap.set("n", "<leader>j", "<C-w>j", { desc = "Move to lower split" })
