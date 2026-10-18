@@ -16,6 +16,9 @@ vim.opt.relativenumber = false
 -- Don't highlight the line under the cursor
 vim.opt.cursorline = false
 
+-- Add a rounded border to floating windows
+vim.opt.winborder = "rounded"
+
 -- Wrap long lines at word boundaries and preserve indentation
 vim.opt.wrap = true
 vim.opt.linebreak = true
