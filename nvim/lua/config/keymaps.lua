@@ -16,10 +16,12 @@ vim.keymap.set("n", "<leader>v", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 -- Map <leader>s to horizontal split
 vim.keymap.set("n", "<leader>s", "<cmd>split<cr>", { desc = "Horizontal split" })
 
--- Stage selected lines with <leader>ss
+-- Stage selected lines
+vim.keymap.set("x", "<leader>s", ":Gitsigns stage_hunk<cr>", { desc = "Stage selected lines" })
 vim.keymap.set("x", "<leader>ss", ":Gitsigns stage_hunk<cr>", { desc = "Stage selected lines" })
 
 -- Preview the current Git hunk in a floating window
+vim.keymap.set("n", "<leader>g", "<cmd>Gitsigns preview_hunk<cr>", { desc = "Preview Git hunk" })
 vim.keymap.set("n", "<leader>gg", "<cmd>Gitsigns preview_hunk<cr>", { desc = "Preview Git hunk" })
 
 -- Move between splits with <leader>h/j/k/l
