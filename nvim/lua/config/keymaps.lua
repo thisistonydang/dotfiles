@@ -10,6 +10,9 @@ vim.keymap.set("i", "lll", "<Esc>", { desc = "Escape insert mode" })
 -- Show LSP hover information for the symbol under the cursor
 vim.keymap.set("n", "<leader>i", vim.lsp.buf.hover, { desc = "Symbol information" })
 
+-- Toggle the same file explorer as <leader>e
+vim.keymap.set("n", "<C-e>", "<leader>e", { remap = true, desc = "Toggle file explorer" })
+
 -- Map <leader>v to vertical split
 vim.keymap.set("n", "<leader>v", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 
