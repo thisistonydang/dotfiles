@@ -7,6 +7,11 @@ return {
       },
       picker = {
         sources = {
+          files = {
+            -- Show hidden and Git-ignored files in the file picker.
+            hidden = true,
+            ignored = true,
+          },
           explorer = {
             -- Show hidden and Git-ignored files in the explorer.
             hidden = true,
