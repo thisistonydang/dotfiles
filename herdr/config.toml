@@ -10,6 +10,7 @@ dark_name = "rose-pine"
 prefix = "`"
 previous_workspace = "prefix+,"
 next_workspace = "prefix+."
+toggle_sidebar = ["prefix+b", "prefix+1"]
 split_vertical = "prefix+\\"
 swap_pane_left = "prefix+left"
 swap_pane_down = "prefix+down"
