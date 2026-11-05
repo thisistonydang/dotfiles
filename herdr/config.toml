@@ -18,5 +18,6 @@ swap_pane_up = "prefix+up"
 swap_pane_right = "prefix+right"
 
 [ui]
+prompt_new_workspace_name = true
 agent_panel_sort = "spaces"
 sidebar_collapsed_mode = "hidden"
