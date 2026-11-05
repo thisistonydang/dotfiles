@@ -36,4 +36,6 @@ link "$ROOT/nvim" "$HOME/.config/nvim"
 
 link "$ROOT/pi/agent/extensions" "$HOME/.pi/agent/extensions"
 
+link "$ROOT/rex/init.lua" "${XDG_CONFIG_HOME:-$HOME/.config}/rex/init.lua"
+
 link "$ROOT/starship/starship.toml" "$HOME/.config/starship.toml"
