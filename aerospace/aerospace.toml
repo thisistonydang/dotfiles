@@ -20,6 +20,10 @@ outer.bottom = 8
 if.app-id = 'com.pais.handy'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
 [mode.main.binding]
 # Change layouts
 alt-slash = 'layout tiles horizontal vertical'
@@ -54,8 +58,12 @@ alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-tab = 'workspace-back-and-forth'
+ctrl-alt-left = 'workspace --wrap-around prev'
+ctrl-alt-right = 'workspace --wrap-around next'
 
 # Move windows to workspaces
+alt-shift-left = 'move-node-to-workspace --wrap-around --focus-follows-window prev'
+alt-shift-right = 'move-node-to-workspace --wrap-around --focus-follows-window next'
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
